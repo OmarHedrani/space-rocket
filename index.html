@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "/node_modules/three/build/three.module.js",
+                "FirstPersonControls": "https://unpkg.com/three@0.138.0/examples/jsm/controls/FirstPersonControls.js",
+                "OrbitControls": "https://unpkg.com/three@0.138.0/examples/jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+    
+    <script type="module" src="./physics/rocket.js"></script>
+    
+    <script type="module" src="./script.js"></script>
+        
+
+</body>
+</html>
